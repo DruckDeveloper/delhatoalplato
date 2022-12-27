@@ -16,7 +16,7 @@ import carne_tajada_porcionada_res from "../img/products/carne-tajada-porcionada
 */
 import costilla_cerdo from "../img/products/costilla-cerdo.jpeg"; 
 import lomo_cerdo from "../img/products/lomo-cerdo.jpg"; 
-import pezuña_cerdo from "../img/products/pezuña_cerdo"; 
+import pezuña_cerdo from "../img/products/pezuña-de-cerdo.jpg"; 
 import tocino_carnudo_cerdo from "../img/products/tocino-carnudo-cerdo.jpg"; 
 import chorizo_mixto from "../img/products/chorizo-mixto-res-cerdo.png"; 
 /* 
@@ -27,20 +27,9 @@ import chorizo_mixto from "../img/products/chorizo-mixto-res-cerdo.png";
 import pechuga_pollo from "../img/products/pechuga-pollo.jpg"; 
 import piernas_pollo from "../img/products/piernas-pollo.jpg"; 
 import cuadril_pollo from "../img/products/cuadril-pollo.jpg"; 
-import alas_pollo from "../img/products/alas_pollo"; 
-/* 
-==============
-    PESCADO
-==============
-*/
-import x from "../img/products/"; 
-import x from "../img/products/"; 
-import x from "../img/products/"; 
-import x from "../img/products/"; 
-import x from "../img/products/"; 
+import alas_pollo from "../img/products/alas-de-pollo.jpg"; 
 
-
-products = [
+const productsData = [
     /*=======================
     CATEGORY: "Carne de res"
     ======================== */
@@ -189,61 +178,6 @@ products = [
         description: "", 
         category: "pollo", 
         tags: ["no marinado"]
-    },
-    /*=======================
-    CATEGORY: "Pescado"
-    ======================== */
-    {
-        id: "16", 
-        title: "",
-        price: 0, 
-        image: x,
-        stock: true,
-        description: "", 
-        category: x, 
-        tags: []
-    },
-    {
-        id: "17", 
-        title: "",
-        price: 0, 
-        image: x,
-        stock: true,
-        description: "", 
-        category: x, 
-        tags: []
-    },
-    {
-        id: "18", 
-        title: "",
-        price: 0, 
-        image: x,
-        stock: true,
-        description: "", 
-        category: x, 
-        tags: []
-    },
-    {
-        id: "19", 
-        title: "",
-        price: 0, 
-        image: x,
-        stock: true,
-        stock: true,
-        description: "", 
-        category: x, 
-        tags: []
-    },
-    {
-        id: "20", 
-        title: "",
-        price: 0, 
-        image: x,
-        stock: true,
-        description: "", 
-        category: x, 
-        tags: []
-    },
+    }
 ]
-
-export default products
+export default productsData
