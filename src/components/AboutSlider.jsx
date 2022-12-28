@@ -5,31 +5,39 @@ import "slick-carousel/slick/slick-theme.css";
 
 const AboutSlider = () => {
   const settings = {
+    arrows: true, 
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1, 
-    autoplay: true
+    autoplay: true, 
+    autoplaySpeed: 6000
   };
   return (
-    <div className="w-100 text-center">
-        <h2 className="text-3xl">¿porque Carnes Del Hato Al Plato?</h2>
+    <div className="w-100 text-center text-">
+        <h2 className="text-4xl">¿porque comprar en<br />Carnes Del Hato Al Plato?</h2>
         <Slider {...settings}>
           <div>
-            <h3>Lorem ipsum dolor sit amet consectetur, <br/> adipisicing elit. Necessitatibus, voluptate cum? Velit, quae? Deserunt maxime veniam amet sed, autem ipsa quasi minima quas quam optio modi expedita mollitia facilis magnam!</h3>
+            <h3>Te ofrecemos gran variedad de carnes<br />Como: res, pollo, cerdo y pescado</h3>
           </div>
           <div>
-            <h3>ABCDEFIJOJOIDJOIEJOIDJOSIJOFIJEOIDJSIJFOEIJSOD</h3>
+            <h3>Carnes tajadas a contra fibra,<br />bajas en rilas para lograr una mayor terneza</h3>
           </div>
           <div>
-            <h3>123456546351654654651651651651</h3>
+            <h3>Si asi lo requieres, empacamos tus carnes al vacio<br />para mantenerlas frescas y en proceso de maduracion</h3>
           </div>
           <div>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. In debitis corrupti optio consectetur voluptatum quaerat ratione est iste. Fugit doloribus atque cupiditate aperiam accusamus ducimus assumenda? Facilis eaque quas maxime?</h3>
+            <h3>Disfruta de nuestras recetas propias en:<br /> <b>Chorizo, Longaniza y carne para hamburgueza</b></h3>
           </div>
           <div>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ullam voluptas repudiandae, amet laboriosam modi suscipit ipsam ad inventore. Odit vel, sed fuga nesciunt quia itaque placeat dignissimos minima aliquid.</h3>
+            <h3>Servicio de porcionado segun gramaje requerido.<br />(Restaurantes)</h3>
+          </div>
+          <div>
+            <h3>Disfruta de pollo por presas 100% <b>NATURAL</b><br />Recuerda que el pollo marinado se reduce durante la cocción:</h3>
+          </div>
+          <div>
+            <h3>Pechuga deshuesada y tajada<br />Sin costo adicional</h3>
           </div>
         </Slider>
       </div>
