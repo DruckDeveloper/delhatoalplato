@@ -1,0 +1,67 @@
+*{
+    font-size: 10px;
+}
+
+@media (min-width: 320px){
+    .banner-background{
+        width: 100%;
+        height: 50%;
+        background-image: url('../img/brand/banner-background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    div.banner-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    div.banner-content div{
+        width: 100%;
+    }
+    div.banner-text-content > h1{
+        text-align: center;
+        color: #ffffff;
+        margin: 5% 0;
+        font-size: 2.5em;
+        font-weight: bold;
+        font-family: 'Arimo', sans-serif;
+    }
+    div.banner-text-content > h2{
+        font-style: italic;
+        text-align: center;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 2em;
+    }
+    .products-button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .products-button span{
+        margin: 5% 0;
+        font-size: 2em;
+        padding: 10px;
+        text-align: center;
+        border-radius: 100px;
+        color: #ffffff;
+        border: 1px solid #ffffff; 
+        background-color: #011526;
+    }
+}
+@media (min-width: 1024px){
+    div.banner-content{
+        flex-direction: row;
+    }
+    div.banner-content div{
+        width: 100%;
+    }
+    div.banner-text-content > h1{
+        font-size: 3.5em;
+    }
+    div.banner-text-content > h2{
+        font-size: 3em;
+    }
+}

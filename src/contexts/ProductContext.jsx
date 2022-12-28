@@ -1,5 +1,6 @@
 //import hooks
 import React, { createContext, useState, useEffect } from "react";
+//Import constant with products data 
 import productsData from "./ProductsData";
 
 //Create product context
