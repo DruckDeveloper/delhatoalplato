@@ -1,18 +1,24 @@
 import React from 'react';
 import Cart from './Cart';
 import '../styles/Header.css'; 
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return <header className='web-header'>
     <nav>
       <ul>
-        <li>HOME</li>
-        <li>PRODUCTS</li>
-        <li>CONTACT</li>
+        <Link to={'/'}>
+          <li>HOME</li>
+        </Link>
+        <Link to={'/products'}>
+          <li>PRODUCTS</li>
+        </Link>
+        <Link to={'/contact'}>
+          <li>CONTACT</li>
+        </Link>
       </ul>
     </nav>
     <Cart />
-
   </header>;
 };
 

@@ -12,7 +12,6 @@ const ProductProvider = ({ children }) => {
   useEffect(() => {
     const fetchProducts = () => {
       const data = productsData;
-      console.log(data);
       setProducts(data);
     };
     fetchProducts();
