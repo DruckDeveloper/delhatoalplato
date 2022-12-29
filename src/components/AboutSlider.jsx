@@ -15,7 +15,7 @@ const AboutSlider = () => {
     autoplaySpeed: 6000
   };
   return (
-    <div className="w-100 text-center text-">
+    <div className="w-100 text-center h-[40vh]">
         <h2 className="text-4xl">¿porque comprar en<br />Carnes Del Hato Al Plato?</h2>
         <Slider {...settings}>
           <div>
