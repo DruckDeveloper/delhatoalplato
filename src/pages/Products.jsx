@@ -1,9 +1,14 @@
 import React from "react";
-//Import product contect
+//Import product data
 import productsData from "../contexts/ProductsData";
 //import product component
-import product from "../components/Product";
 import Product from "../components/Product";
+//Import category cards 
+import CategoryCard from '../components/CategoryCard'; 
+//Import category images 
+import categoryRes from '../img/products/category-res.jpg'; 
+import categoryCerdo from '../img/products/category-cerdo.jpg'; 
+import categoryPollo from '../img/products/category-pollo.jpg'; 
 
 const Products = () => {
   console.log(productsData);
@@ -17,6 +22,13 @@ const Products = () => {
   console.log(filteredProducts);
   return (
     <div>
+      {/* categories section */}
+      <section className="w-full flex justify-center gap-[20px]">
+        <CategoryCard cat_image={categoryRes} cat_name="carne de res"/>
+        <CategoryCard cat_image={categoryCerdo} cat_name="carne de cerdo"/>
+        <CategoryCard cat_image={categoryPollo} cat_name="pollo"/>
+      </section>
+      {/* products section */}
       <section className="gap-[50px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl-grid-cols-5 gap-[30px] max-w-sm mx-auto md:max-w-none md:mx-0">
