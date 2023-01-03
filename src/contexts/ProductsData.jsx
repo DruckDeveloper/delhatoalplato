@@ -41,7 +41,6 @@ const productsData = [
         stock: true,
         description: "",
         category: "carne de res",
-        tags: ["carne de res"]
     }, 
     {
         id: "2", 
@@ -50,8 +49,7 @@ const productsData = [
         image: punta_de_anca_madurada,
         stock: true,
         description: "", 
-        category: "carne de res", 
-        tags: ["carne de res", "carnes maduradas"]
+        category: "carne de res"
     }, 
     {
         id: "3", 
@@ -60,8 +58,7 @@ const productsData = [
         image: carnes_finas_asar,
         stock: true,
         description: "", 
-        category: "carne de res", 
-        tags: ["carne de res", "carnes finas"]
+        category: "carne de res"
     },
     {
         id: "4", 
@@ -70,8 +67,7 @@ const productsData = [
         image: lomo_fino_res,
         stock: true,
         description: "", 
-        category: "carne de res", 
-        tags: ["carne de res", "carnes finas"]
+        category: "carne de res"
     },
     {
         id: "5", 
@@ -81,7 +77,6 @@ const productsData = [
         stock: true,
         description: "", 
         category: "carne de res", 
-        tags: ["carne de res"]
     }, 
     /*=======================
     CATEGORY: "Carne de cerdo"
@@ -93,8 +88,7 @@ const productsData = [
         image: costilla_cerdo,
         stock: true,
         description: "", 
-        category: "carne de cerdo", 
-        tags: ["carne de cerdo"]
+        category: "carne de cerdo"
     }, 
     {
         id: "7", 
@@ -103,8 +97,7 @@ const productsData = [
         image: lomo_cerdo,
         stock: true,
         description: "", 
-        category: "carne de cerdo", 
-        tags: ["carne de cerdo"]
+        category: "carne de cerdo"
     }, 
     {
         id: "8", 
@@ -113,8 +106,7 @@ const productsData = [
         image: pezuña_cerdo,
         stock: true,
         description: "", 
-        category: "carne de cerdo", 
-        tags: ["carne de cerdo"]
+        category: "carne de cerdo"
     }, 
     {
         id: "9", 
@@ -123,8 +115,7 @@ const productsData = [
         image: tocino_carnudo_cerdo,
         stock: true,
         description: "", 
-        category: "carne de cerdo", 
-        tags: ["carne de cerdo", "panceta de cerdo"]
+        category: "carne de cerdo"
     }, 
     {
         id: "10", 
@@ -133,8 +124,7 @@ const productsData = [
         image: chorizo_mixto,
         stock: true,
         description: "", 
-        category: "carne de res", 
-        tags: ["carne de res", "carne de cerdo", "receta propia"]
+        category: "carne de res"
     }, 
     /*=======================
     CATEGORY: "Pollo"
@@ -146,8 +136,7 @@ const productsData = [
         image: pechuga_pollo,
         stock: true,
         description: "", 
-        category: "pollo", 
-        tags: ["pollo", "no marinado"]
+        category: "pollo"
     }, 
     {
         id: "12", 
@@ -156,8 +145,7 @@ const productsData = [
         image: piernas_pollo,
         stock: true,
         description: "", 
-        category: "pollo", 
-        tags: ["pollo", "no marinado"]
+        category: "pollo"
     },
     {
         id: "13", 
@@ -166,8 +154,7 @@ const productsData = [
         image: cuadril_pollo,
         stock: true,
         description: "", 
-        category: "pollo", 
-        tags: ["pollo", "no marinado", "muslo"]
+        category: "pollo"
     },
     {
         id: "14", 
@@ -176,8 +163,7 @@ const productsData = [
         image: alas_pollo,
         stock: true,
         description: "", 
-        category: "pollo", 
-        tags: ["no marinado"]
+        category: "pollo" 
     }
 ]
 export default productsData

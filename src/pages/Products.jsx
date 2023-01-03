@@ -9,13 +9,14 @@ import CategoryCard from '../components/CategoryCard';
 import categoryRes from '../img/products/category-res.jpg'; 
 import categoryCerdo from '../img/products/category-cerdo.jpg'; 
 import categoryPollo from '../img/products/category-pollo.jpg'; 
+import categoryAll from '../img/products/category-all.jpg'; 
 
 const Products = () => {
   console.log(productsData);
   const filteredProducts = productsData.filter((item) => {
     return (
       item.category === "carne de res" ||
-      item.category === "carne de cerdo" ||
+      // item.category === "carne de cerdo" ||
       item.category === "pollo"
     );
   });
@@ -23,7 +24,8 @@ const Products = () => {
   return (
     <div>
       {/* categories section */}
-      <section className="w-full flex justify-center gap-[20px]">
+      <section className="w-full grid grid-cols-2 md:grid-cols-4">
+        <CategoryCard cat_image={categoryAll} cat_name="todos"/>
         <CategoryCard cat_image={categoryRes} cat_name="carne de res"/>
         <CategoryCard cat_image={categoryCerdo} cat_name="carne de cerdo"/>
         <CategoryCard cat_image={categoryPollo} cat_name="pollo"/>
@@ -31,7 +33,7 @@ const Products = () => {
       {/* products section */}
       <section className="gap-[50px]">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl-grid-cols-5 gap-[30px] max-w-sm mx-auto md:max-w-none md:mx-0">
+          <div className="grid grid-cols-2 lg:grid-cols-4 xl-grid-cols-5 gap-[50px] mx-auto md:max-w-none md:mx-0">
             {filteredProducts.map((product) => {
               return (
                 <Product
@@ -40,7 +42,6 @@ const Products = () => {
                   image={product.image}
                   price={product.price}
                   stock={product.stock}
-                  tags={product.tags}
                   description={product.description}
                   key={product.id}
                 />

@@ -8,17 +8,17 @@ const Header = () => {
     <nav>
       <ul>
         <Link to={'/'}>
-          <li>HOME</li>
+          <li>INICIO</li>
         </Link>
         <Link to={'/products'}>
-          <li>PRODUCTS</li>
+          <li>PRODUCTOS</li>
         </Link>
         <Link to={'/contact'}>
-          <li>CONTACT</li>
+          <li>CONTACTANOS</li>
         </Link>
       </ul>
+      <Cart />
     </nav>
-    <Cart />
   </header>;
 };
 
