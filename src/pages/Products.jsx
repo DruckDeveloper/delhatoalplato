@@ -13,14 +13,7 @@ import categoryAll from '../img/products/category-all.jpg';
 
 const Products = () => {
   console.log(productsData);
-  const filteredProducts = productsData.filter((item) => {
-    return (
-      item.category === "carne de res" ||
-      // item.category === "carne de cerdo" ||
-      item.category === "pollo"
-    );
-  });
-  console.log(filteredProducts);
+
   return (
     <div>
       {/* categories section */}
@@ -34,7 +27,7 @@ const Products = () => {
       <section className="gap-[50px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-2 lg:grid-cols-4 xl-grid-cols-5 gap-[50px] mx-auto md:max-w-none md:mx-0">
-            {filteredProducts.map((product) => {
+            {productsData.map((product) => {
               return (
                 <Product
                   id={product.id}

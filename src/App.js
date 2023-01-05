@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 //Import react router dom
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+//import cart context 
+import CartContextProvider from './contexts/CartContextProvider';
 //Import pages
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
@@ -11,12 +13,10 @@ import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-export const ProductContext = React.createContext();
 
 const App = () => {
-  const [cartItems, setCartItems] = useState([]);
   return (
-    <ProductContext.Provider value={cartItems}>
+    <CartContextProvider>
       <div className="overflow-hiden">
         <Router>
           <Header />
@@ -30,7 +30,8 @@ const App = () => {
           <Footer />
         </Router>
       </div>
-  </ProductContext.Provider>
+    </CartContextProvider>
+  
   )
 };
 

@@ -1,15 +1,22 @@
 import React from "react";
-import {ProductContext} from '../App'; 
+import CartCOntext from "../contexts/CartContext";
 import { useContext } from 'react'; 
-import { FaCartPlus } from "react-icons/fa";
+import ItemCount from "./ItemCount";
 
 const Product = (props) => {
-  const cartArray = useContext(ProductContext)
-  const cartAction = _ => {
-    cartArray.push("a"); 
-    console.log(cartArray); 
+  const cartContext = useContext(CartCOntext); 
+  const {cart, addToCart} = cartContext; 
+  const onAdd = (qty) => {
+    addToCart(Product, qty); 
   }
 
+  let itemModel = {
+    id: props.id, 
+    title: props.title, 
+    price: props.price, 
+    image: props.image
+  }
+  
   return (
     <div className="border border-[#E4E4E4] mb-4 h-[300px] overflow-hiden group transition my-[50px] box-border">
       <div className="w-full flex justify-center items-center">
@@ -37,10 +44,7 @@ const Product = (props) => {
         </h3>
       </div>
       {/* add to cart button */}
-      <div className="p-2 flex justify-center items-center gap-[5px] sm:text-[15px] md:text-[25px] text-white font-bold bg-[#A36047] rounded-md hover:cursor-pointer">
-        <FaCartPlus className="text-white sm:text-[15px] md:text-[25px]" />
-        <button>AÑADIR AL CARRITO</button>
-      </div>
+      <ItemCount initial={1} onAdd={onAdd} item={itemModel}/>
     </div>
   );
 };
