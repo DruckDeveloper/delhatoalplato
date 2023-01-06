@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import ReactWhatsapp from 'react-whatsapp';
 import CartItem from '../components/CartItem';
 import CartContext from "../contexts/CartContext";
 
@@ -12,8 +13,8 @@ const CartPage = () => {
     <div>
       <h2 className="text-center">
         {cart.length === 0
-          ? "Aun no has añadido productos al carrito"
-          : "Tus productos"}
+          ? "El carrito esta vacio"
+          : "Productos:"}
       </h2>
       {cart.map((item) => {
         return <CartItem 
@@ -25,7 +26,10 @@ const CartPage = () => {
           qty={item.qty}
         />
       })}
-        <h3 className='text-center text-[20px]'>Total: {totalPrice}</h3>
+        <h3 className='text-center text-[20px]'>Total: ${totalPrice}</h3>
+        <ReactWhatsapp number="57-316-463-3038" mesage="Hola mundo">
+          Realizar compra
+        </ReactWhatsapp>
     </div>
   )
 }
