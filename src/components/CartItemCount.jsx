@@ -2,10 +2,9 @@ import React from "react";
 import { useContext } from "react";
 import CartContext from "../contexts/CartContext";
 import { useState } from "react";
-import { FaCartPlus } from "react-icons/fa";
 
 
-const ItemCount = ({ initial,  item}) => {
+const CartItemCount = ({ initial,  item}) => {
   const [qty, setQty] = useState(initial);
 
   const { addToCart } = useContext(CartContext); 
@@ -37,11 +36,10 @@ const ItemCount = ({ initial,  item}) => {
         <div 
         className="p-2 flex justify-center items-center gap-[5px] sm:text-[15px] md:text-[25px] text-white font-bold bg-[#A36047] rounded-md hover:cursor-pointer" 
         onClick={addItem}>
-          <FaCartPlus className="text-white sm:text-[15px] md:text-[25px]" />
-          <button>AÑADIR AL CARRITO</button>
+          <button>ELIMINAR</button>
       </div>
     </div>
   );
 };
 
-export default ItemCount;
+export default CartItemCount;

@@ -6,6 +6,10 @@ const CartContextProvider = (props) => {
 
   const addToCart = (productItem, qty) => setCart([...cart, { ...productItem, qty: qty }]);
   
+  const cartTotalPrice = () => {
+    const total = cart.reduce((acc, product) => acc + product.price, 0);
+    return total;
+  };
 
   const quitToCart = (productItem) => {};
 
@@ -14,6 +18,7 @@ const CartContextProvider = (props) => {
     setCart,
     addToCart,
     quitToCart,
+    cartTotalPrice, 
   };
 
   return (
