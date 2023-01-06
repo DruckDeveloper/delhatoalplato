@@ -4,13 +4,10 @@ import CartContext from "./CartContext";
 const CartContextProvider = (props) => {
   const [cart, setCart] = useState([]);
 
-  const addToCart = (productItem, qty) => {
-    let item = { ...productItem, qty: qty };
-    setCart([...cart, item]);
-    console.log(cart);
-  };
+  const addToCart = (productItem, qty) => setCart([...cart, { ...productItem, qty: qty }]);
+  
 
-  const quitToCart = () => {};
+  const quitToCart = (productItem) => {};
 
   const contextValues = {
     cart,

@@ -1,9 +1,10 @@
 import React from "react";
 
-const CategoryCard = ({ cat_image, cat_name }) => {
+const CategoryCard = ({ cat_image, cat_name, action}) => {
   return (
     // category container
-    <div className="relative grid place-items-center relative hover:cursor-pointer">
+    <div 
+    className="relative grid place-items-center relative hover:cursor-pointer">
       {/* category background image */}
       <img
         className="rounded-xl"
