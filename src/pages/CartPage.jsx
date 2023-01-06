@@ -27,7 +27,7 @@ const CartPage = () => {
         />
       })}
         <h3 className='text-center text-[20px]'>Total: ${totalPrice}</h3>
-        <ReactWhatsapp number="57-316-463-3038" mesage="Hola mundo">
+        <ReactWhatsapp number="57-316-463-3038" message="Hola mundo">
           Realizar compra
         </ReactWhatsapp>
     </div>
