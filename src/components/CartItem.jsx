@@ -1,5 +1,4 @@
 import React from "react";
-import Cart from "./Cart";
 import CartItemCount from "./CartItemCount";
 
 const CartItem = (props) => {
@@ -13,7 +12,7 @@ const CartItem = (props) => {
         <div>
           <h2 className="text-[20px]">{props.title}</h2>
           <span className="text-[15px]">${props.price}</span>
-          <CartItemCount initial={props.qty} />
+          <CartItemCount initial={props.qty} item={props.id}/>
         </div>
       </article>
     </section>

@@ -7,17 +7,24 @@ const CartContextProvider = (props) => {
   const addToCart = (productItem, qty) => setCart([...cart, { ...productItem, qty: qty }]);
   
   const cartTotalPrice = () => {
-    const total = cart.reduce((acc, product) => acc + product.price, 0);
+    const total = cart.reduce((acc, product) => acc + product.price * product.qty, 0);
     return total;
   };
 
-  const quitToCart = (productItem) => {};
+  const decrementCart = (productId) => {
+    setCart()
+  }
 
+  const removeCartItem = (productId) => {
+    setCart((cartprev) =>  cartprev.filter((item) => item.id !== productId ))
+  }
+  
+  
   const contextValues = {
     cart,
     setCart,
     addToCart,
-    quitToCart,
+    removeCartItem, 
     cartTotalPrice, 
   };
 
