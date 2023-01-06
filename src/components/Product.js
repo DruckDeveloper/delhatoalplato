@@ -5,7 +5,7 @@ import ItemCount from "./ItemCount";
 
 const Product = (props) => {
   const cartContext = useContext(CartCOntext); 
-  const {cart, addToCart} = cartContext; 
+  const { addToCart } = cartContext; 
   const onAdd = (qty) => {
     addToCart(Product, qty); 
   }
@@ -14,7 +14,7 @@ const Product = (props) => {
     id: props.id, 
     title: props.title, 
     price: props.price, 
-    image: props.image
+    image: props.image, 
   }
   
   return (
