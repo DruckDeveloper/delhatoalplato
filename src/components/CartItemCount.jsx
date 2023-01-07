@@ -17,8 +17,8 @@ const CartItemCount = ({ initial,  item}) => {
     }
   }
 
-  
   const removeFromCart = () => removeCartItem(item);
+  
   return (
     <div>
       <div className="text-[25px] flex justify-center gap-1">

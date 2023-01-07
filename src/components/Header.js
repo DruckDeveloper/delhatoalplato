@@ -7,13 +7,13 @@ const Header = () => {
   return <header className='web-header'>
     <nav>
       <ul>
-        <Link to={'/'}>
+        <Link to={'/'} className="opacity-60 hover:opacity-100 duration-150">
           <li>INICIO</li>
         </Link>
-        <Link to={'/products'}>
+        <Link to={'/products'} className="opacity-60 hover:opacity-100 duration-150">
           <li>PRODUCTOS</li>
         </Link>
-        <Link to={'/contact'}>
+        <Link to={'/contact'} className="opacity-60 hover:opacity-100 duration-150">
           <li>CONTACTANOS</li>
         </Link>
       </ul>

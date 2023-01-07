@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import ReactWhatsapp from "react-whatsapp";
-import { IoLogoWhatsapp } from 'react-icons/io'
+import { IoLogoWhatsapp } from "react-icons/io";
 import CartItem from "../components/CartItem";
 import CartContext from "../contexts/CartContext";
 
@@ -10,7 +10,7 @@ const CartPage = () => {
 
   return (
     <div>
-      <h2 className="text-center">
+      <h2 className="text-center text-[20px] font-bold">
         {cart.length === 0 ? "El carrito esta vacio" : "Productos:"}
       </h2>
       {cart.map((item) => {
