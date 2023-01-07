@@ -7,8 +7,7 @@ import CartContext from "../contexts/CartContext";
 const CartPage = () => {
   const { cart, cartTotalPrice } = useContext(CartContext); 
   console.log(cart)
-  let totalPrice = cartTotalPrice(); 
-  console.log(totalPrice)
+  
   return (
     <div>
       <h2 className="text-center">
@@ -26,8 +25,10 @@ const CartPage = () => {
           qty={item.qty}
         />
       })}
-        <h3 className='text-center text-[20px]'>Total: ${totalPrice}</h3>
-        <ReactWhatsapp number="57-316-463-3038" message="Hola mundo">
+        <h3 className='text-center text-[20px]'>Total: ${cartTotalPrice()}</h3>
+        <ReactWhatsapp number="57-316-463-3038" message={`Me gustaria adquirir los siguientes productos:\n ${cart.map((smsItem) => {
+        return smsItem.title + " " + "Precio " + smsItem.price +  "\n" + "cantidad: " + smsItem.qty + "\n"
+    })} Total: ${cartTotalPrice()}`}>
           Realizar compra
         </ReactWhatsapp>
     </div>

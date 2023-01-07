@@ -8,7 +8,7 @@ const CartContextProvider = (props) => {
   
   const cartTotalPrice = () => {
     const total = cart.reduce((acc, product) => acc + product.price * product.qty, 0);
-    return total;
+    return total.toString();
   };
 
   const decrementCart = (productId) => {
@@ -18,7 +18,7 @@ const CartContextProvider = (props) => {
   const removeCartItem = (productId) => {
     setCart((cartprev) =>  cartprev.filter((item) => item.id !== productId ))
   }
-  
+
   
   const contextValues = {
     cart,
