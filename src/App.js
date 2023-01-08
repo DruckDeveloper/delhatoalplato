@@ -9,7 +9,6 @@ import Contact from "./pages/Contact";
 import Products from "./pages/Products";
 import CartPage from "./pages/CartPage";
 //Import components
-import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -26,7 +25,6 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<CartPage />} />
           </Routes>
-          <Sidebar />
           <Footer />
         </Router>
       </div>
