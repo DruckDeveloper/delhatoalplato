@@ -4,16 +4,22 @@ import CartContext from "../contexts/CartContext";
 import { useState } from "react";
 
 
-const CartItemCount = ({ initial,  item}) => {
+const CartItemCount = ({ initial, item }) => {
   const [qty, setQty] = useState(initial);
-  const {removeCartItem } = useContext(CartContext)
+  const {cart, setCart, removeCartItem } = useContext(CartContext)
 
   const increaseQty = () => {
     setQty(qty + 1);
+    setCart(cart.map((cartItem) => {
+      return {...cartItem, qty:  cartItem.qty + 1};  
+    }))
   };
   const decreaseQty = () => {
-    if(qty > initial){
-      setQty(qty - 1); 
+    if(qty > 1){
+      setQty(qty -1); 
+      setCart(cart.map((cartItem) => {
+        return {...cartItem, qty:  cartItem.qty - 1};  
+      }))
     }
   }
 

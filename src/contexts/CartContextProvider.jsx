@@ -11,10 +11,6 @@ const CartContextProvider = (props) => {
     return total.toString();
   };
 
-  const decrementCart = (productId) => {
-    setCart()
-  }
-
   const removeCartItem = (productId) => {
     setCart((cartprev) =>  cartprev.filter((item) => item.id !== productId ))
   }
