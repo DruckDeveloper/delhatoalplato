@@ -21,7 +21,7 @@ const Products = () => {
   return (
     <div>
       {/* categories section */}
-      <section className="w-full grid grid-cols-2 md:grid-cols-4">
+      <section className="w-full grid grid-cols-3 md:grid-cols-4 items-center">
         <div onClick={() => setUserCategory("carne de res")}>
           <CategoryCard
             cat_image={categoryRes}
@@ -45,7 +45,7 @@ const Products = () => {
         </div>
       </section>
       {/* products section */}
-      <section className="gap-[50px]">
+      <section className="gap-[50px] mb-[50px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-2 lg:grid-cols-4 xl-grid-cols-5 gap-[50px] mx-auto md:max-w-none md:mx-0">
             {renderProducts.length > 0

@@ -25,7 +25,7 @@ ___
 * [tailwind.css](https://tailwindcss.com/docs/installation) 
 * [react-slick & slick-carrusel](https://react-slick.neostack.com/)  
 
-# Documentation: 
+# **Table of contents**: 
 
 you can see the full documentation [HERE]()
 

@@ -4,7 +4,7 @@ const CategoryCard = ({ cat_image, cat_name, action}) => {
   return (
     // category container
     <div 
-    className="relative grid place-items-center relative hover:cursor-pointer">
+    className="relative grid place-items-center hover:cursor-pointer">
       {/* category background image */}
       <img
         className="rounded-xl"
