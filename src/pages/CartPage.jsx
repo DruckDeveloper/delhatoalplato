@@ -9,7 +9,7 @@ const CartPage = () => {
   console.log(cart);
 
   return (
-    <div className="h-[80vh]">
+    <div className="min-h-[80vh] max-h-max">
       <h2 className="text-center text-[20px] font-bold">
         {cart.length === 0 ? "El carrito esta vacio" : "Productos:"}
       </h2>
