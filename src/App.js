@@ -18,7 +18,7 @@ const App = () => {
     <CartContextProvider>
       <div className="overflow-hiden">
         <Router>
-          <Header />
+          <Header className="fixed" />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />

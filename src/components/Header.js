@@ -4,7 +4,7 @@ import '../styles/Header.css';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-  return <header className='web-header'>
+  return <header className='web-header sticky top-0 w-screen'>
     <nav>
       <ul>
         <Link to={'/'} className="opacity-60 hover:opacity-100 duration-150">

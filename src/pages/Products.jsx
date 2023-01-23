@@ -21,33 +21,33 @@ const Products = () => {
   return (
     <div>
       {/* categories section */}
-      <section className="w-full grid grid-cols-3 md:grid-cols-4 items-center">
+      <section className="w-full grid grid-cols-3 items-center gap-[20px] m-[5px]">
         <div onClick={() => setUserCategory("carne de res")}>
           <CategoryCard
             cat_image={categoryRes}
             action={setUserCategory}
-            cat_name="carne de res"
+            cat_name="Res"
           />
         </div>
         <div onClick={() => setUserCategory("carne de cerdo")}>
           <CategoryCard
             cat_image={categoryCerdo}
             action={setUserCategory}
-            cat_name="carne de cerdo"
+            cat_name="Cerdo"
           />
         </div>
         <div onClick={() => setUserCategory("pollo")}>
           <CategoryCard
             cat_image={categoryPollo}
             action={setUserCategory}
-            cat_name="pollo"
+            cat_name="Pollo"
           />
         </div>
       </section>
       {/* products section */}
       <section className="gap-[50px] mb-[50px]">
         <div className="container mx-auto">
-          <div className="grid grid-cols-2 lg:grid-cols-4 xl-grid-cols-5 gap-[50px] mx-auto md:max-w-none md:mx-0">
+          <div className="grid grid-cols-1 lg:grid-cols-4 xl-grid-cols-5 gap-[50px] mx-auto md:max-w-none md:mx-0">
             {renderProducts.length > 0
               ? renderProducts.map((product) => {
                   return (

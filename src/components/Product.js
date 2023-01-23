@@ -31,8 +31,8 @@ const Product = (props) => {
       </div>
       {/* product information */}
       <div className="text-center">
-        <h2 className="text-[25px]">{props.title}</h2>
-        <span className="font-bold text-[25px]">${props.price}</span>
+        <h2 className="text-[20px]">{props.title}</h2>
+        <span className="font-bold text-[20px]">${props.price}</span>
         <h3
           className={
             props.stock

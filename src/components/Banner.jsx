@@ -5,10 +5,10 @@ import logo_image from '../img/brand/logo-delhatoalplato.png';
 
 const Banner = () => {
   return (
-    <div className='banner-background'>
+    <div className='banner-background md:w-screen'>
         <div className='banner-content'>
           <div className='banner-image-container'>
-            <img src={logo_image} alt="logo Carnes del hato al plato"/>
+            <img src={logo_image} alt="logo Carnes del hato al plato" />
           </div>
           <div className='banner-text-content'>
             <h1>En “carnes del hato al plato” <br /> 
