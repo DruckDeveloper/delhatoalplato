@@ -16,9 +16,9 @@ const AboutSlider = () => {
     autoplaySpeed: 6000
   };
   return (
-    <div className="w-100 text-center h-[40vh] slider__container">
+    <div className="w-100 text-center slider__container">
         <h2 className="text-4xl slider__container--title">¿porque comprar en<br />Carnes Del Hato Al Plato?</h2>
-        <Slider {...settings}>
+        <Slider {...settings} >
           <div className="slider__item">
             <h3 className="slider__item--text">Te ofrecemos gran variedad de carnes<br />Como: res, pollo, cerdo y pescado</h3>
           </div>

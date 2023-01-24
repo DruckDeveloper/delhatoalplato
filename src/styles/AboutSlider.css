@@ -1,0 +1,20 @@
+.slider__item{
+    height: 100%;
+} 
+
+.slider__container{
+    padding: 100px 10px;
+} 
+.slider__container--title{
+    padding: 10px 0; 
+    font-weight: 600;
+}
+.slider__item .slider__item--text{ 
+    width: 100%;
+}
+.slider__item--text, b, span{
+    font-size: 20px;
+}
+.slick-dots li button:before {
+    font-size: 12px !important;
+}
