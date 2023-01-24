@@ -18,10 +18,10 @@ const Product = (props) => {
   }
   
   return (
-    <div className="border border-[#E4E4E4] mb-4 h-[300px] overflow-hiden group transition my-[50px] box-border">
-      <div className="w-full flex justify-center items-center">
+    <div className="border border-[#E4E4E4] h-[400px] overflow-hiden group transition box-border flex flex-col justify-between">
+      <div className="w-full flex justify items-center">
         {/* import product image */}
-        <div className="w-[250px] h-[250px] mx-auto flex justify-center items-center">
+        <div className="w-[100%] mx-auto flex justify-center items-center">
           <img
             className="max-h-[200px] group-hover:scale-110 transition duration-300"
             src={props.image}
