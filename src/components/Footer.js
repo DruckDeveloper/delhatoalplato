@@ -6,7 +6,7 @@ import '../styles/Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="web-footer">
+    <footer className="web-footer w-full">
       <div className="footer-text-content flex justify-center" >
         <ul className="w-[30%] text-center text-white">
           <li className="flex justify-center items-center">

@@ -25,7 +25,7 @@ const ItemCount = ({ initial,  item}) => {
   
   return (
     <div>
-      <div className="text-[25px] flex justify-center gap-1">
+      <div className="text-[25px] flex justify-center gap-10">
         <button
           onClick={decreaseQty}
         >
