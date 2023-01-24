@@ -45,7 +45,7 @@ const Products = () => {
         </div>
       </section>
       {/* products section */}
-      <section className="gap-[50px] py-[50px]">
+      <section className="gap-[50px] py-[50px] md:p-[25px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-4 xl-grid-cols-5 gap-[50px] mx-auto md:max-w-none md:mx-0">
             {renderProducts.length > 0
