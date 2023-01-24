@@ -6,12 +6,12 @@ import '../styles/Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="web-footer w-full">
+    <footer className="web-footer w-full py-[10px] flex flex-col gap-[10px]">
       <div className="footer-text-content flex justify-center" >
-        <ul className="w-[30%] text-center text-white">
+        <ul className="w-[50%] text-center text-white">
           <li className="flex justify-center items-center">
-            <FaCalendarAlt className="text-[20px] text-center text-white"/>
-            <span>Horario de atencion</span>
+            <FaCalendarAlt className="text-[20px] text-center text-white mx-[3px] mb-[3px]"/>
+            <span className="text-[15px]">Horario de atención</span>
           </li>
           <li>Lunes a Sabado: 7:00a.m. - 7:00p.m.</li>
           <li>Domingos: 7:00a.m. - 3.p.m.</li>
@@ -29,5 +29,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;

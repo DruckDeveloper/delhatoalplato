@@ -9,8 +9,8 @@ const CartPage = () => {
   console.log(cart);
 
   return (
-    <div className="min-h-[80vh] max-h-max">
-      <h2 className="text-center text-[20px] font-bold">
+    <div className="min-h-[80vh] max-h-max flex items-center flex-col">
+      <h2 className="text-center text-[20px] md:text-[25px] lg:text-[30px] font-bold">
         {cart.length === 0 ? "El carrito esta vacio" : "Productos:"}
       </h2>
       {cart.map((item) => {
@@ -42,7 +42,7 @@ const CartPage = () => {
             );
           }
         )} Total:  $${cartTotalPrice()}`}
-        className="flex justify-center items-center w-full"
+        className=""
       >
         <div className="my-[15px] text-[20px] text-[#ffffff] font-bold px-5 py-2 rounded-lg bg-[#25D366] hover:bg-[#ffffff] hover:text-[#25D366] duration-300 border-[1px] boder-solid border-black flex justify-items items-center gap-1">
           <IoLogoWhatsapp className="text-[inherit] text-[20px]" />

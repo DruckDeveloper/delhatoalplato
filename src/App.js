@@ -16,7 +16,7 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <CartContextProvider>
-      <div className="overflow-hidden">
+      <div className="overflow-x-hidden">
         <Router>
           <Header className="fixed" />
           <Routes>

@@ -38,7 +38,7 @@ const ItemCount = ({ initial,  item}) => {
         className="p-2 flex justify-center items-center gap-[5px] sm:text-[15px] md:text-[25px] text-white font-bold bg-[#A36047] rounded-md hover:cursor-pointer" 
         onClick={addItem}>
           <FaCartPlus className="text-white sm:text-[15px] md:text-[25px]" />
-          <button className="text-[20px]">AÑADIR AL CARRITO</button>
+          <button className="text-[20px] sm:text-[15px]">AÑADIR AL CARRITO</button>
       </div>
     </div>
   );
